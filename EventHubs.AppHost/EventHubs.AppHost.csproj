@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
 
@@ -7,13 +7,13 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<IsAspireHost>true</IsAspireHost>
     <UserSecretsId>9e724807-cd1b-40a5-9eef-368e8e76c342</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EventHubs.ApiService\EventHubs.Api.csproj" />
     <ProjectReference Include="..\EventHubs.Consumer\EventHubs.Consumer.csproj" />
-    <ProjectReference Include="..\EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>

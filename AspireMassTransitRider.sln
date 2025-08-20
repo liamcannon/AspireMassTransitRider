@@ -2,13 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.AppHost", "AspireMassTransitRider.AppHost\EventHubs.AppHost.csproj", "{835CB2F1-FD60-4033-9E9A-EB6004A20D93}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.ServiceDefaults", "AspireMassTransitRider.ServiceDefaults\EventHubs.ServiceDefaults.csproj", "{30051F36-E914-6E3E-97B4-578A63DA700D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.Api", "AspireMassTransitRider.ApiService\EventHubs.Api.csproj", "{B080A6CA-77F1-A4CA-C66B-74F0330F1CFF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.Consumer", "EventHubs.Consumer\EventHubs.Consumer.csproj", "{06EA610B-63EA-4D05-A63B-A40E8BC767F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.Api", "EventHubs.ApiService\EventHubs.Api.csproj", "{97762035-AC24-B4B9-CFE7-FB14BFC0D492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.AppHost", "EventHubs.AppHost\EventHubs.AppHost.csproj", "{A7873B2B-1D9E-9E29-0102-61EE95E4828C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubs.ServiceDefaults", "EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj", "{F9746AD9-73B8-A234-7A2A-95DD7FF89688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,22 +16,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{835CB2F1-FD60-4033-9E9A-EB6004A20D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{835CB2F1-FD60-4033-9E9A-EB6004A20D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{835CB2F1-FD60-4033-9E9A-EB6004A20D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{835CB2F1-FD60-4033-9E9A-EB6004A20D93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30051F36-E914-6E3E-97B4-578A63DA700D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30051F36-E914-6E3E-97B4-578A63DA700D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30051F36-E914-6E3E-97B4-578A63DA700D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30051F36-E914-6E3E-97B4-578A63DA700D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B080A6CA-77F1-A4CA-C66B-74F0330F1CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B080A6CA-77F1-A4CA-C66B-74F0330F1CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B080A6CA-77F1-A4CA-C66B-74F0330F1CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B080A6CA-77F1-A4CA-C66B-74F0330F1CFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06EA610B-63EA-4D05-A63B-A40E8BC767F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06EA610B-63EA-4D05-A63B-A40E8BC767F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06EA610B-63EA-4D05-A63B-A40E8BC767F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06EA610B-63EA-4D05-A63B-A40E8BC767F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97762035-AC24-B4B9-CFE7-FB14BFC0D492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97762035-AC24-B4B9-CFE7-FB14BFC0D492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97762035-AC24-B4B9-CFE7-FB14BFC0D492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97762035-AC24-B4B9-CFE7-FB14BFC0D492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7873B2B-1D9E-9E29-0102-61EE95E4828C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7873B2B-1D9E-9E29-0102-61EE95E4828C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7873B2B-1D9E-9E29-0102-61EE95E4828C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7873B2B-1D9E-9E29-0102-61EE95E4828C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9746AD9-73B8-A234-7A2A-95DD7FF89688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9746AD9-73B8-A234-7A2A-95DD7FF89688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9746AD9-73B8-A234-7A2A-95DD7FF89688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9746AD9-73B8-A234-7A2A-95DD7FF89688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
