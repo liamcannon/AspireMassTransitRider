@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-EventHubs.Consumer-513c4753-791a-4165-af4e-e542ec809748</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
+    <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.5.2" />
+    <PackageReference Include="MassTransit.EventHub" Version="8.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj" />
+  </ItemGroup>
+</Project>

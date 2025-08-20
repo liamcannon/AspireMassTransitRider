@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.5.2" />
+    <PackageReference Include="MassTransit.EventHub" Version="8.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+  </ItemGroup>
+
+</Project>

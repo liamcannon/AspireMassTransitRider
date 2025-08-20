@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>9e724807-cd1b-40a5-9eef-368e8e76c342</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventHubs.ApiService\EventHubs.Api.csproj" />
+    <ProjectReference Include="..\EventHubs.Consumer\EventHubs.Consumer.csproj" />
+    <ProjectReference Include="..\EventHubs.ServiceDefaults\EventHubs.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.Azure.EventHubs" Version="9.4.1" />
+    <PackageReference Include="Aspire.Hosting.Azure.ServiceBus" Version="9.4.1" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="9.4.1" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.3.1" />
+  </ItemGroup>
+
+</Project>
