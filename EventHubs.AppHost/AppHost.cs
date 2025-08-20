@@ -1,7 +1,5 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var cache = builder.AddRedis("cache");
-
 var serviceBus = builder.AddAzureServiceBus("servicebus")
     .RunAsEmulator();
 
@@ -15,7 +13,6 @@ var demoEventConsumer = demoEvent.AddConsumerGroup("hub-consumer-group");
 
 var apiService = builder.AddProject<Projects.EventHubs_Api>("apiservice")
     .WithHttpHealthCheck("/health")
-    .WithReference(cache)
     .WithReference(serviceBus)
     .WithReference(eventHub)
     .WithReference(demoEvent)
